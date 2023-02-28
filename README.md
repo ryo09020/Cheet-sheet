@@ -1,4 +1,5 @@
 # Cheet-sheet
 
-##github
+## github
+
 -[githubとの連携](github/combinationGitHub.md)
