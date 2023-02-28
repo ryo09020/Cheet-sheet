@@ -29,6 +29,6 @@ Key：コピーした公開鍵の中身を貼り付ける
 ## 3. GitHubとの接続確認
 ```
 username:~/environment $ ssh -T git@github.com
-Hi ! You've successfully authenticated, but GitHub does not provide shell access.
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 2行目の記述がでできたら成功！！
