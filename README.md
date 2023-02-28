@@ -2,4 +2,4 @@
 
 ## github
 
--[githubとの連携](github/combinationGitHub.md)
+- [githubとの連携](github/combinationGitHub.md)
