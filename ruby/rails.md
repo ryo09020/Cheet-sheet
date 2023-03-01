@@ -1,0 +1,43 @@
+## Railsアプリケーションの作成
+
+- Appのひな形の作成
+```
+rails new アプリ名
+```
+
+- controller作成
+```
+rails g controller コントローラ名(複数形&小文字)
+```
+
+- model作成
+```
+rails g model   モデル名(単数形&1文字目大文字)
+rails db:migrate　　　　　　　　　　　　　　　   #テーブル作成
+```
+
+
+
+
+## routingの書き方
+```
+HTTPメソッド 'URL' => 'コントローラ#アクション'
+get 'top' => 'homes#top'
+```
+
+
+
+
+### ミスったら集
+
+```
+rails rm -rf アプリ名　　　                                  #アプリ削除
+```
+```
+rails d controller コントローラ名　　                        #コントローラ削除
+```
+```
+rails g migration Addカラム名Toテーブル名 カラム名:型名      #カラム追加
+→rails g migration AddNameToUsers name:string
+rails g migration Removeカラム名Fromテーブル名 カラム名:型名 #カラム削除
+```
