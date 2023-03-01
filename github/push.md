@@ -16,7 +16,7 @@ $ git clone リポジトリURL
 
 ## リモートの変更をローカルに反映
 ```
-$ git fetch origin                               #リモートリポジトリからローカルにあるリモートリポジトリのコピーに最新情報をダウンロード→ローカルに反映されているわけではない
+$ git fetch origin                              #リモートリポジトリからローカルにあるリモートリポジトリのコピーに最新情報をダウンロード→ローカルに反映されているわけではない
 $ git merge ブランチ名                           #ローカルブランチに反映する
 $ git pull origin ブランチ名                     #fetchとmergeをまとめて実行
 ```
@@ -25,5 +25,5 @@ $ git pull origin ブランチ名                     #fetchとmergeをまとめ
 ```
 $ git status                                   #add,commitに関するの確認
 $ git diff                                     #ワークツリーとインデックスの差分確認
-$ git reset HEAD^　　　　　　　　　　　　　　　　#1つ前のコミットに戻る
-$ git remoe -v                            　 #現在の紐付き先の確認
+$ git reset HEAD^　　　　　　　　　　　　　　　 　#1つ前のコミットに戻る
+$ git remote -v                             　 #現在の紐付き先の確認
