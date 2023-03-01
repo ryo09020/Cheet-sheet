@@ -12,7 +12,7 @@ rails g controller コントローラ名(複数形&小文字)
 
 - controller作成と同時にアクション、必要なviewとRouting作成方法
 ```
-rails g controller コントローラ名 new index show edit
+rails g controller コントローラ名　アクション名たち
 ```
 
 - model作成
