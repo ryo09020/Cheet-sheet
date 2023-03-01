@@ -25,4 +25,5 @@ $ git pull origin ブランチ名                     #fetchとmergeをまとめ
 ```
 $ git status                                   #add,commitに関するの確認
 $ git diff                                     #ワークツリーとインデックスの差分確認
-$ git reset HEAD^　　　　　　　　　　　　　　　#1つ前のコミットに戻る
+$ git reset HEAD^　　　　　　　　　　　　　　　　#1つ前のコミットに戻る
+$ git remode -v                            　 #現在の紐付き先の確認
