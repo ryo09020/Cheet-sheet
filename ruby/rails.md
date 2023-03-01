@@ -10,10 +10,15 @@ rails new アプリ名
 rails g controller コントローラ名(複数形&小文字)
 ```
 
+-　controller作成と同時にアクション、必要なviewとRouting作成方法
+```
+rails g controller コントローラ名 new index show edit
+```
+
 - model作成
 ```
 rails g model   モデル名(単数形&1文字目大文字)
-rails db:migrate　　　　　　　　　　　　　　　   #テーブル作成
+rails db:migrate　　　　　　　　　　　　　　　  　　　　　　 #テーブル作成
 ```
 
 
@@ -22,8 +27,10 @@ rails db:migrate　　　　　　　　　　　　　　　   #テーブル作
 ## routingの書き方
 ```
 HTTPメソッド 'URL' => 'コントローラ#アクション'
-get 'top' => 'homes#top'
+get 'homes/top' => 'homes#top'
+get 'homes/top'
 ```
+上の2行は同じ意味
 
 
 
@@ -39,5 +46,9 @@ rails d controller コントローラ名　　                        #コント
 ```
 rails g migration Addカラム名Toテーブル名 カラム名:型名      #カラム追加
 →rails g migration AddNameToUsers name:string
+
 rails g migration Removeカラム名Fromテーブル名 カラム名:型名 #カラム削除
+```
+```
+rails routes                                                #routing確認
 ```
