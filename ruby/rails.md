@@ -10,7 +10,7 @@ rails new アプリ名
 rails g controller コントローラ名(複数形&小文字)
 ```
 
--　controller作成と同時にアクション、必要なviewとRouting作成方法
+- controller作成と同時にアクション、必要なviewとRouting作成方法
 ```
 rails g controller コントローラ名 new index show edit
 ```
@@ -35,7 +35,7 @@ get 'homes/top'
 
 
 
-### ミスったら集
+## ミスったら集
 
 ```
 rails rm -rf アプリ名　　　                                  #アプリ削除
