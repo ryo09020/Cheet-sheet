@@ -53,3 +53,9 @@ rails g migration Removeカラム名Fromテーブル名 カラム名:型名 #カ
 ```
 rails routes                                                #routing確認
 ```
+```
+rails db:migrate:status                                     #現状どこまでmigratefileが読み込まれているか確認できる
+```
+```
+rails db:migrate:reset                                     #現状のDBの環境を破棄し、新しくmigratefileからDBの作成
+```
