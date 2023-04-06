@@ -5,4 +5,4 @@
 - [githubとの連携](github/combinationGitHub.md)
 
 ## Ruby
--[Railsアプリについて](ruby/rails.md)
+- [Railsアプリについて](ruby/rails.md)
