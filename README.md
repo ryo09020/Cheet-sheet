@@ -6,3 +6,6 @@
 
 ## Ruby
 - [Railsアプリについて](ruby/rails.md)
+
+## Python
+- [Pythonの環境構築](python/python.md)
