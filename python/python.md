@@ -1,4 +1,4 @@
-# Pythonの環境構築
+# Pythonの環境構築for mac
 ## 前提
 Homebrewのinstallが完了している
 ```
