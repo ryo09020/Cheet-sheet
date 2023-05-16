@@ -2,6 +2,7 @@
 ## 前提
 Homebrewのinstallが完了している
 ```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor      #Homebrewの確認
 ```
 ## 1. pyenvのインストール
