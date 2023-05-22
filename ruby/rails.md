@@ -39,7 +39,7 @@ get 'homes/top'
 ## ミスったら集
 
 ```
-rails rm -rf アプリ名　　　                                  #アプリ削除
+rm -rf アプリ名　　　                                  #アプリ削除
 ```
 ```
 rails d controller コントローラ名　　                        #コントローラ削除
