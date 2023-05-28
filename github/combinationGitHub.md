@@ -6,7 +6,7 @@
 
 ## 1. GitHubの接続に必要な鍵の作成
 ```
-username:~ $ ssh-keygen
+ssh-keygen
 ```
 
  ターミナルに以上のコードを入力します。実行後に入力を求められますが、全て未入力で Enter キーを押してください。以上で公開鍵、秘密鍵を生成しました。
@@ -18,7 +18,7 @@ ls ~/.ssh
 
 ## 2. 公開鍵をGitHubに登録
 ```
-username:~ $cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ```
 これを実行し、「ssh-rsa ~~~~~~~　」をコピーし、GitHubブラウザで右上の自分のアイコンから「Settings」を選択し、左側に表示されるメニューで SSH and GPG keys を選択し、New SSH key ボタンを選択。
 
