@@ -3,6 +3,7 @@
 ## github
 - [gitコマンド](github/push.md)
 - [githubとの連携](github/combinationGitHub.md)
+- [gitエラー集](github/error.md)
 
 ## Ruby
 - [Railsアプリについて](ruby/rails.md)
