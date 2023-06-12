@@ -32,7 +32,12 @@ get 'homes/top' => 'homes#top'
 get 'homes/top'
 ```
 
-
+##　git clone してからアプリを立ち上げるまで
+```
+bundle install
+yarn add @babel/plugin-proposal-private-methods @babel/plugin-proposal-private-property-in-object
+rails db:migrate RAILS_ENV=test
+```
 
 
 
