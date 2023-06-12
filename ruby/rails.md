@@ -36,7 +36,7 @@ get 'homes/top'
 ```
 bundle install
 yarn add @babel/plugin-proposal-private-methods @babel/plugin-proposal-private-property-in-object
-rails db:migrate RAILS_ENV=test
+rails db:migrate RAILS_ENV=develop #=~はエラーを見てかな
 ```
 
 
