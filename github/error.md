@@ -17,3 +17,5 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 git push -f -u origin master
 ```
 リモートのorigin/masterにローカルのmasterをpush -fはforse, -uはupsteam「upstream（上流）ブランチを追跡する」
+
+## 2. チーム開発においてのエラーたち
