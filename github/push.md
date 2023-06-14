@@ -35,3 +35,10 @@ git branch                                   #ブランチ一覧
 git checkout develop                         #developブランチに移動
 git checkout -b develop2                     #develop2ブランチを作成＆移動
 ```
+## 機密情報などをpushしてしまった場合
+GitHubからファイル本体だけでなくcommit履歴も削除し、強制pushを行うorリポジトリを作り直す
+```
+git reset --mixed                          #add,commitを取り消す
+git reset HEAD^ 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#直前のadd,commitを取り消す
+```
+ここで "--soft" commitのみor "--hard"ファイル変更,add,comit全てを取り消すコマンドもある
