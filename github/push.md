@@ -21,9 +21,17 @@ $ git merge ブランチ名                           #ローカルブランチ�
 $ git pull origin ブランチ名                     #fetchとmergeをまとめて実行
 ```
 
-# 現状を把握するためのコマンド
+## 現状を把握するためのコマンド
 ```
 $ git status                                   #add,commitに関するの確認
 $ git diff                                     #ワークツリーとインデックスの差分確認
 $ git reset HEAD^　　　　　　　　　　　　　　　 　#1つ前のコミットに戻る
 $ git remote -v                             　 #現在の紐付き先の確認
+```
+## チーム開発で使うコマンド
+```
+git branch develop                           #developブランチの作成
+git branch                                   #ブランチ一覧
+git checkout develop                         #developブランチに移動
+git checkout -b develop2                     #develop2ブランチを作成＆移動
+```
