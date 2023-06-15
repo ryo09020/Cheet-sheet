@@ -38,7 +38,7 @@ git checkout -b develop2                     #develop2ブランチを作成＆�
 ## 機密情報などをpushしてしまった場合
 GitHubからファイル本体だけでなくcommit履歴も削除し、強制pushを行うorリポジトリを作り直す
 ```
-git reset --mixed                          #add,commitを取り消す
+git reset --mixed ~~(commit_id)             #add,commitを取り消す
 git reset HEAD^ 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#直前のadd,commitを取り消す
 ```
-ここで "--soft" commitのみor "--hard"ファイル変更,add,comit全てを取り消すコマンドもある
+ここで "--soft" commitのみor "--hard"ファイル変更,add,comit全てを取り消すコマンドもある "git log" でコミットid確認しよう
