@@ -67,5 +67,5 @@ rails db:migrate:reset                                     #現状のDBの環境
 ```
 $ rails db:rollback                                      # 最新のmigrationファイルのstatusをupからdownに変更
 $ rails db:rollback STEP=〇　←戻したいファイルの個数    #いくつかのmigrationファイルをまとめてdownにしたいとき
-$ rails db:migration:down VERSTION= ◯◯ ← MigrationID  ## 特定のmigrationファイル一つのみdownにしたいとき
+$ rails db:migrate:down VERSTION= ◯◯ ← MigrationID  ## 特定のmigrationファイル一つのみdownにしたいとき
 ```
