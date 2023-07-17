@@ -42,3 +42,12 @@ git reset --mixed ~~(commit_id)             #add,commitを取り消す
 git reset HEAD^ 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#直前のadd,commitを取り消す
 ```
 ここで "--soft" commitのみor "--hard"ファイル変更,add,comit全てを取り消すコマンドもある "git log" でコミットid確認しよう
+
+## リモートリポを変えたい時
+```
+git remote set-url origin 変更後のssh
+↓アカウント変えるなら以下のようになることも↓
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+```
+
