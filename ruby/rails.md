@@ -69,3 +69,42 @@ $ rails db:rollback                                      # 最新のmigrationフ
 $ rails db:rollback STEP=〇　←戻したいファイルの個数    #いくつかのmigrationファイルをまとめてdownにしたいとき
 $ rails db:migrate:down VERSTION= ◯◯ ← MigrationID  ## 特定のmigrationファイル一つのみdownにしたいとき
 ```
+
+## テーブル設計ミスった場合
+本当はItemモデルのカラムにはnameとしたかったのにnamaeになっていた場合
+```
+class Items < ActiveRecor~~~
+  def change
+    create_table :cart_items do |t|
+      t.integer :namae
+      t.integer :item_id ,null:false
+      t.integer :quantity ,null:false
+      t.timestamps
+    end
+  end
+end
+```
+みたいな感じでmigrationfileで型と名前ミスった時
+1. migrationfileを書き換える
+```
+class Items < ActiveRecor~~~
+  def change
+    create_table :cart_items do |t|
+      t.strion :name
+      t.integer :item_id ,null:false
+      t.integer :quantity ,null:false
+      t.timestamps
+    end
+  end
+end
+```
+2. テーブルを作り直す（このコードだと今までのレコードも消えます）
+テーブルとレコードの削除およびマイグレーションの実行を一気に行うコマンド
+```
+rails db:migrate:reset
+```
+3. schema確認
+反映されてなかったら以下で更新
+```
+rake db:reset
+```
