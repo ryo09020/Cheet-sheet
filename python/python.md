@@ -30,6 +30,9 @@ pyenv global 3.11.3
 ```
 
 ## シェル　bash→zsh
+
+
+##仮想環境作り方
 ```
 chsh -s /bin/zsh
 echo $SHELL
