@@ -17,5 +17,16 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 git push -f -u origin master
 ```
 リモートのorigin/masterにローカルのmasterをpush -fはforse, -uはupsteam「upstream（上流）ブランチを追跡する」
+この方法だとリモートのコミットたちはローカルのコミットに上書きしてしまうのでリモートの変更も残してローカルのコードを反映したい時は以下のように行う。
+
+### ローカルとリモートのブランチをmergeすることで解決
+```
+git merge origin origin/main
+```
+このコードはリモートのmainブランチ情報をローカルのoriginにmergeさせようとするもの
+
+この後にローカル行でマージエディターができるのでそこから必要なものを残していらない方を消す作業を行う。
+
+最後にcommitしてpushすることを忘れないようにしましょう。
 
 ## 2. チーム開発においてのエラーたち
