@@ -43,7 +43,7 @@ get 'homes/top'
 ## 　gitcloneしてからアプリを立ち上げるまで
 ```
 bundle install
-yarn add @babel/plugin-proposal-private-methods @babel/plugin-proposal-private-property-in-object
+yarn add @babel/plugin-proposal-private-methods @babel/plugin-proposal-private-property-in-object   #Webpacker::Manifest::MissingEntryError対処
 rails db:migrate RAILS_ENV=develop #=~はエラーを見てかな
 ```
 
