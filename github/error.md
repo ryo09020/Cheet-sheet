@@ -12,14 +12,14 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ```
 
-強制的にプッシュする方法
+### 解決方法1: 強制的にプッシュする方法(あまりお勧めしない)
 ```
 git push -f -u origin master
 ```
 リモートのorigin/masterにローカルのmasterをpush -fはforse, -uはupsteam「upstream（上流）ブランチを追跡する」
 この方法だとリモートのコミットたちはローカルのコミットに上書きしてしまうのでリモートの変更も残してローカルのコードを反映したい時は以下のように行う。
 
-### ローカルとリモートのブランチをmergeすることで解決
+### 解決方法2: ローカルとリモートのブランチをmergeすることで解決
 ```
 git merge origin origin/main
 ```
